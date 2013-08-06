@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<endpoints version="2.0" xmlns="http://java.sun.com/xml/ns/jax-ws/ri/runtime">
+  <endpoint implementation="nn.maths" name="maths" url-pattern="/maths"/>
+  <endpoint implementation="nn.area" name="area" url-pattern="/area"/>
+  <endpoint implementation="ws.area" name="area" url-pattern="/area"/>
+  <endpoint implementation="ws.maths" name="maths" url-pattern="/maths"/>
+</endpoints>

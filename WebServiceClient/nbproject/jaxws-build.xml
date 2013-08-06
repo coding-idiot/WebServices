@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+        *** GENERATED FROM jax-ws.xml - DO NOT EDIT !                             ***
+        *** TO MODIFY wsimport options USE Web Service node -> Edit WS Attributes ***
+        *** TO CHANGE TARGETS GENERATED TO jaxws-build.xml COPY THOSE             ***
+        *** TARGETS TO ../build.xml AND MODIFY THAT FILE INSTEAD                  ***
+
+        -->
+<project xmlns:xalan="http://xml.apache.org/xslt" xmlns:webproject2="http://www.netbeans.org/ns/web-project/2" xmlns:jaxws="http://www.netbeans.org/ns/jax-ws/1">
+    <!--
+                ===================
+                JAX-WS WSGEN SECTION
+                ===================
+            -->
+    <!--
+                ===================
+                JAX-WS WSIMPORT SECTION
+                ===================
+            -->
+    <target name="wsimport-init" depends="init">
+        <mkdir dir="${build.generated.sources.dir}/jax-ws"/>
+        <taskdef name="wsimport" classname="com.sun.tools.ws.ant.WsImport">
+            <classpath path="${java.home}/../lib/tools.jar:${j2ee.platform.wsimport.classpath}:${javac.classpath}"/>
+        </taskdef>
+        <condition property="conf-dir" value="${conf.dir}/" else="">
+            <isset property="conf.dir"/>
+        </condition>
+    </target>
+    <target name="wsimport-client-maths" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/maths"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/maths" destdir="${build.generated.dir}/jax-wsCache/maths" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/maths/wsdl/localhost_8084/WebserviceWithTomcat/maths.wsdl" catalog="catalog.xml" extension="true" verbose="true" wsdlLocation="http://localhost:8084/WebserviceWithTomcat/maths?wsdl" xnocompile="true" xendorsed="true" target="2.1">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/maths/wsdl/localhost_8084/WebserviceWithTomcat/maths.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/maths"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/maths">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-maths" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/nn"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/maths"/>
+    </target>
+    <target name="wsimport-client-area" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/area"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/area" destdir="${build.generated.dir}/jax-wsCache/area" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/area/wsdl/localhost_8084/WebserviceWithTomcat/area.wsdl" catalog="catalog.xml" extension="true" verbose="true" wsdlLocation="http://localhost:8084/WebserviceWithTomcat/area?wsdl" xnocompile="true" xendorsed="true" target="2.1">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/area/wsdl/localhost_8084/WebserviceWithTomcat/area.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/area"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/area">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-area" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/nn"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/area"/>
+    </target>
+    <target name="wsimport-client-area_1" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/area_1"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/area_1" destdir="${build.generated.dir}/jax-wsCache/area_1" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/area_1/wsdl/localhost_8084/WebserviceWithTomcat/area.wsdl" catalog="catalog.xml" extension="true" verbose="true" wsdlLocation="http://localhost:8084/WebserviceWithTomcat/area?wsdl" xnocompile="true" xendorsed="true" target="2.1">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/area_1/wsdl/localhost_8084/WebserviceWithTomcat/area.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/area_1"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/area_1">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-area_1" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/nn"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/area_1"/>
+    </target>
+    <target name="wsimport-client-area_2" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/area_2"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/area_2" destdir="${build.generated.dir}/jax-wsCache/area_2" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/area_2/wsdl/localhost_8084/WebserviceWithTomcat/area.wsdl" catalog="catalog.xml" extension="true" verbose="true" wsdlLocation="http://localhost:8084/WebserviceWithTomcat/area?wsdl" xnocompile="true" xendorsed="true" target="2.1">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/area_2/wsdl/localhost_8084/WebserviceWithTomcat/area.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/area_2"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/area_2">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-area_2" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/nn"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/area_2"/>
+    </target>
+    <target name="wsimport-client-maths_1" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/maths_1"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/maths_1" destdir="${build.generated.dir}/jax-wsCache/maths_1" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/maths_1/wsdl/localhost_8084/WebApplication10/maths.wsdl" catalog="catalog.xml" extension="true" verbose="true" wsdlLocation="http://localhost:8084/WebApplication10/maths?wsdl" xnocompile="true" xendorsed="true" target="2.1">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/maths_1/wsdl/localhost_8084/WebApplication10/maths.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/maths_1"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/maths_1">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-maths_1" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/ws"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/maths_1"/>
+    </target>
+    <target name="wsimport-client-maths_2" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/maths_2"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/maths_2" destdir="${build.generated.dir}/jax-wsCache/maths_2" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/maths_2/wsdl/localhost_8084/WebApplication10/maths.wsdl" catalog="catalog.xml" extension="true" verbose="true" wsdlLocation="http://localhost:8084/WebApplication10/maths?wsdl" xnocompile="true" xendorsed="true" package="newws" target="2.1">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/maths_2/wsdl/localhost_8084/WebApplication10/maths.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/maths_2"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/maths_2">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-maths_2" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/newws"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/maths_2"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-maths, wsimport-client-area, wsimport-client-area_1, wsimport-client-area_2, wsimport-client-maths_1, wsimport-client-maths_2"/>
+</project>

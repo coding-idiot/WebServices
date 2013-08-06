@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8084/WebserviceWithTomcat/maths?wsdl" uri="src/conf/xml-resources/web-service-references/maths/wsdl/localhost_8084/WebserviceWithTomcat/maths.wsdl"/>
+    <system systemId="http://localhost:8084/WebserviceWithTomcat/maths?xsd=1" uri="src/conf/xml-resources/web-service-references/maths/wsdl/localhost_8084/WebserviceWithTomcat/maths.xsd_1.xsd"/>
+    <system systemId="http://localhost:8084/WebserviceWithTomcat/area?wsdl" uri="src/conf/xml-resources/web-service-references/area_2/wsdl/localhost_8084/WebserviceWithTomcat/area.wsdl"/>
+    <system systemId="http://localhost:8084/WebserviceWithTomcat/area?xsd=1" uri="src/conf/xml-resources/web-service-references/area_2/wsdl/localhost_8084/WebserviceWithTomcat/area.xsd_1.xsd"/>
+    <system systemId="http://localhost:8084/WebApplication10/maths?wsdl" uri="src/conf/xml-resources/web-service-references/maths_2/wsdl/localhost_8084/WebApplication10/maths.wsdl"/>
+    <system systemId="http://localhost:8084/WebApplication10/maths?xsd=1" uri="src/conf/xml-resources/web-service-references/maths_2/wsdl/localhost_8084/WebApplication10/maths.xsd_1.xsd"/>
+</catalog>
